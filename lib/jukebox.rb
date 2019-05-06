@@ -23,7 +23,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   choice = gets.chomp
-  picked_song = nil 
+  picked_song = nil # initialize value to nil
   songs.each_with_index do |song, i| # song is value, i is index
     if choice == song || choice == (i + 1).to_s 
       picked_song = song # changes picked_song from nil
@@ -42,7 +42,7 @@ end
 
 def run(songs)
   help
-  user_response = nil
+  user_response = nil # initialize value to nil
   while user_response != "exit"
     puts "Please enter a command:"
     user_response = gets.chomp
